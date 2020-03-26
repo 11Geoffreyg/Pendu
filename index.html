@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pendu</title>
+        <link rel='stylesheet' type='text/css' href='style.css'>
+        <script src='main.js'></script>
+    </head>
+    <body>
+        <div class='titleDiv'>
+            <h1 class='title'>Jeu du Pendu</h1>
+        </div>
+        <p class='text'>Les règles sont simples, devinez le mot en donnant une lettre à la fois, 7 fautes et c'est perdu !</p>
+        <div class='form'>
+            <button id='play' onclick="guessInput()">Jouer !</button>
+            <input type="text" id="lettre" style="display: none;" maxlength="1">
+        </div>
+        <div id='response'>
+        </div>
+        </form>
+        <p style='display: none;'>Réponse : <span id='word'></span></p>
+        <h2 id='container' style='display: none;'>Nombre d'erreur(s) : <span id='mistake'></span></h2>
+    </body>
+</html>
