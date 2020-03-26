@@ -33,7 +33,12 @@ const guessword = () => {
         x.setAttribute('class', 'responseElement');
         x.setAttribute('id', 'responseElement'+i)
         document.body.appendChild(x);
-        document.getElementById('responseElement'+i).innerHTML = '_ ';
+        console.log(longueur);
+        if(i===0 || i===longueur-1){
+            document.getElementById('responseElement'+i).innerHTML = word[i];
+        }else{
+            document.getElementById('responseElement'+i).innerHTML = '_ ';
+        }
     }
 }
 //fonction qui gere le formulaire
