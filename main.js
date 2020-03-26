@@ -1,15 +1,15 @@
 //tableau des mots à deviner
 const words = [
-    'bonjour', 
-    'maison', 
-    'voiture', 
-    'ecole', 
+    'variable', 
+    'fonction', 
+    'hooks', 
+    'declaration', 
     'ordinateur', 
     'javascript', 
     'developpeur', 
-    'paris', 
-    'voyage', 
-    'soleil'
+    'navigateur', 
+    'virus', 
+    'react'
 ];
 //compte de cliques sur le bouton 'jouer'
 let counter = 0;
@@ -33,7 +33,6 @@ const guessword = () => {
         x.setAttribute('class', 'responseElement');
         x.setAttribute('id', 'responseElement'+i)
         document.body.appendChild(x);
-        console.log(longueur);
         if(i===0 || i===longueur-1){
             document.getElementById('responseElement'+i).innerHTML = word[i];
         }else{
